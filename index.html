@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>cryptography</title>
+<link href="cryptography.css" rel="stylesheet" type="text/css">
+<script src="https://fkurz.net/ham/jscwlib/src/jscwlib.js"></script>
+<!-- <link href="cryptography.js" rel="stylesheet" type="text/css"> -->
+<!-- <script src="cryptography.css"></script> -->
+</head>
+<body>
+  <div>
+    <table id="customers">
+      <tr>
+          <th>Encription Decription Form</th>
+          <th></th>
+        </tr>
+      <tr>
+          <td>
+            <label for="fname">Plain Text Message:</label>
+          </td>
+          <td> 
+              <input class="input" type="text" id="stringvalue"  name="_firstname" value="" size="50">
+          </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="cypher">Select Cypher:</label>
+        </td>
+        <td>
+          <select id="List" onchange="getSelectedValue()">
+            <option value="_caesar">Caesar</option>
+            <option value="_morase" >Morse</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td> <button type="submit" class="button" onclick="EncryptMessage()">Encript Message!</button>
+        <button type="submit" class="button" onclick="DecryptMessage()">Decription Message!</button></td>
+
+      </tr>
+      <tr>
+        <td>
+          <label for="cypher">Result:</label>
+        </td>
+        <td>
+          <input type="text" id="showresult" name="_result" value="" size="50" ><br></td>
+         </tr>
+           
+    </table>
+    <form id="demo" >
+      <label for="cypher">Enter Morase Code</label>
+      <input class="input" type="text" pattern="[.\- ]+" name="code" value="" size="50" >
+      <button type="submit" class="button">Play</button>
+    </form>
+  </div> 
+   <script src="cryptography.js"></script>
+   <script src="audio.js"></script>
+  
+</body>
+</html>
